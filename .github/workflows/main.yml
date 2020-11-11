@@ -34,7 +34,7 @@ jobs:
   uses: Borales/actions-yarn@v2.3.0
   with:
     # Yarn command
-     cmd: yarn install #npm install / yarn install
+     cmd: npm install #npm install / yarn install
     
        - name: creating build
           run: yarn build # or npm build
