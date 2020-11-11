@@ -22,7 +22,7 @@ jobs:
      - uses: actions/checkout@v2
 
      - name: Setup Node.js environment
-       uses: actions/setup-node@v1.4.2
+       uses: actions/setup-node@v2-beta
   
        with:
 
@@ -34,7 +34,7 @@ jobs:
   uses: Borales/actions-yarn@v2.3.0
   with:
     # Yarn command
-      cmd: yarn install     #npm install / yarn install
+      cmd: install     #npm install / yarn install
     
        - name: creating build
           run: yarn build # or npm build
